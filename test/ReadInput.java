@@ -10,9 +10,9 @@ public class ReadInput {
         try {
             File file = new File(System.getProperty("user.dir") + relativePath);
             Scanner scanner = new Scanner(file);
-            String output = "";
+            String output = scanner.nextLine();
             while (scanner.hasNextLine()) { // For some reason something goes wrong here where seperate lines are not recognized as such
-                output += scanner.nextLine();
+                output += "\n" + scanner.nextLine();
             }
             scanner.close();
             return output;
