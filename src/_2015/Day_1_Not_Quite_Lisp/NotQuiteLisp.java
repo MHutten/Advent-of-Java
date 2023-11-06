@@ -1,10 +1,10 @@
-package _2015.Day_1_Not_Quite_Lisp;
+package src._2015.Day_1_Not_Quite_Lisp;
 
 import java.io.IOException;
 
 public class NotQuiteLisp {
     
-    protected static int getSantasDestination(String directions) {
+    public static int getSantasDestination(String directions) {
         int floor = 0;
 
         for (char direction: directions.toCharArray()) {
@@ -29,7 +29,7 @@ public class NotQuiteLisp {
         }
     }
 
-    protected static int santaEntersBasementAt(String directions) {
+    public static int santaEntersBasementAt(String directions) {
         int floor = 0;
         int instruction_count = 0;
 

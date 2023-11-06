@@ -1,14 +1,13 @@
-package _2015.Day_1_Not_Quite_Lisp;
+package test._2015.Day_1_Not_Quite_Lisp;
 
 import static org.junit.Assert.assertEquals;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import src._2015.Day_1_Not_Quite_Lisp.NotQuiteLisp;
+import test.ReadInput;
 
 public class NotQuiteLispTest {
 
@@ -16,24 +15,7 @@ public class NotQuiteLispTest {
 
     @Before
     public void setup() {
-        directions = readInput();
-    }
-
-    public String readInput() {
-        try {
-            File file = new File(System.getProperty("user.dir") + "\\_2015\\Day_1_Not_Quite_Lisp\\input.txt");
-            Scanner scanner = new Scanner(file);
-            String output = "";
-            while (scanner.hasNextLine()) {
-                output += scanner.nextLine();
-            }
-            scanner.close();
-            return output;
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-            return "";
-        }
+        directions = ReadInput.readInput("\\test\\_2015\\Day_1_Not_Quite_Lisp\\input.txt");
     }
 
     /* -------------------- Part 1 -------------------- */
@@ -86,8 +68,7 @@ public class NotQuiteLispTest {
 
     @Test
     public void part1() {
-        int destination = NotQuiteLisp.getSantasDestination(directions);
-        assertEquals(138, destination);
+        assertEquals(138, NotQuiteLisp.getSantasDestination(directions));
     }
 
     /* -------------------- Part 2 -------------------- */
@@ -115,8 +96,7 @@ public class NotQuiteLispTest {
 
     @Test
     public void part2() {
-        int characterPosition = NotQuiteLisp.santaEntersBasementAt(directions);
-        assertEquals(1771, characterPosition);
+        assertEquals(1771, NotQuiteLisp.santaEntersBasementAt(directions));
     }
 }
 
