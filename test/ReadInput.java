@@ -11,7 +11,7 @@ public class ReadInput {
             File file = new File(System.getProperty("user.dir") + relativePath);
             Scanner scanner = new Scanner(file);
             String output = scanner.nextLine();
-            while (scanner.hasNextLine()) { // For some reason something goes wrong here where seperate lines are not recognized as such
+            while (scanner.hasNextLine()) {
                 output += "\n" + scanner.nextLine();
             }
             scanner.close();
