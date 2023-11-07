@@ -34,5 +34,25 @@ public class I_Was_Told_There_Would_Be_No_Math {
 
         return 2*l*w + 2*w*h + 2*h*l + Math.min(Math.min(l*w, w*h), h*l);
     }
+
+    public static int getRequiredFeetOfRibbon(String listOfDimensions) {
+        Scanner scanner = new Scanner(listOfDimensions);
+        int feetOfRibbon = 0;
+
+        while (scanner.hasNextLine()) {
+            feetOfRibbon += getFeetOfRibbonForPresent(parseDimensionsString(scanner.nextLine()));
+        }
+
+        scanner.close();
+        return feetOfRibbon;
+    }
+
+    private static int getFeetOfRibbonForPresent(ArrayList<Integer> boxDimensions) {
+        int l = boxDimensions.get(0);
+        int w = boxDimensions.get(1);
+        int h = boxDimensions.get(2);
+
+        return l*w*h + Math.min(Math.min(2*l+2*w, 2*w+2*h), 2*h+2*l);
+    }
     
 }

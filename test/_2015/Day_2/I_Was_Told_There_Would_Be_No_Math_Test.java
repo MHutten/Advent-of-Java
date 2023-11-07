@@ -3,6 +3,7 @@ package test._2015.Day_2;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import src._2015.Day_2.I_Was_Told_There_Would_Be_No_Math;
@@ -32,6 +33,18 @@ public class I_Was_Told_There_Would_Be_No_Math_Test {
 
     /* ---------- Additional Cases ---------- */
 
+    @Test
+    @Ignore
+    public void presentWithNegativeDimensions() {
+        // TODO should throw exception since negative dimensions are not realistic
+    }
+
+    @Test
+    @Ignore
+    public void presentTooLarge() {
+        // TODO should throw exception when required amount of wrapping paper exceeds max int
+    }
+
     /* ---------- Problem ---------- */
 
     @Test
@@ -43,12 +56,29 @@ public class I_Was_Told_There_Would_Be_No_Math_Test {
 
     /* ---------- Provided Examples ---------- */
 
+    @Test
+    public void ribbonForPresentOf2x3x4() {
+        assertEquals(34, I_Was_Told_There_Would_Be_No_Math.getRequiredFeetOfRibbon("2x3x4"));
+    }
+
+    @Test
+    public void ribbonForPresentOf1x1x10() {
+        assertEquals(14, I_Was_Told_There_Would_Be_No_Math.getRequiredFeetOfRibbon("1x1x10"));
+    }
+
     /* ---------- Additional Cases ---------- */
+
+    @Test
+    @Ignore
+    public void ribbonTooLong() {
+        // TODO should throw exception when required amount of ribbon exceeds max int
+    }
 
     /* ---------- Problem ---------- */
 
     @Test
     public void part2() {
+        assertEquals(3842356, I_Was_Told_There_Would_Be_No_Math.getRequiredFeetOfRibbon(listOfDimensions));
     }
 }
 
