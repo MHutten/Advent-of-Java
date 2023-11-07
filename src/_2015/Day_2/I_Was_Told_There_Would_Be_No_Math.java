@@ -1,12 +1,11 @@
-package src._2015.Day_2_I_Was_Told_There_Would_Be_No_Math;
+package src._2015.Day_2;
 
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class IWasToldThereWouldBeNoMath {
+public class I_Was_Told_There_Would_Be_No_Math {
 
     public static int getRequiredSquareFeetOfWrappingPaper(String listOfDimensions) {
-
         Scanner scanner = new Scanner(listOfDimensions);
         int squareFeetOfWrappingPaper = 0;
 

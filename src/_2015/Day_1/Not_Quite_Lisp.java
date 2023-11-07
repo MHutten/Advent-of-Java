@@ -1,8 +1,8 @@
-package src._2015.Day_1_Not_Quite_Lisp;
+package src._2015.Day_1;
 
 import java.io.IOException;
 
-public class NotQuiteLisp {
+public class Not_Quite_Lisp {
     
     public static int getSantasDestination(String directions) {
         int floor = 0;
