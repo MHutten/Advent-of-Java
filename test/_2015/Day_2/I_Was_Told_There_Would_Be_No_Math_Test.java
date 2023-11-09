@@ -45,6 +45,18 @@ public class I_Was_Told_There_Would_Be_No_Math_Test {
         // TODO should throw exception when required amount of wrapping paper exceeds max int
     }
 
+    @Test
+    @Ignore
+    public void thatIsNotANumber() {
+        // TODO should throw exception when there is a character other than x or a number
+    }
+
+    @Test
+    @Ignore
+    public void aDimensionIsMissing() {
+        // TODO should throw exception when a dimensions is missing
+    }
+
     /* ---------- Problem ---------- */
 
     @Test
