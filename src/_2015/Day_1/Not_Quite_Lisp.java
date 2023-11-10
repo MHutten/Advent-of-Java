@@ -4,14 +4,14 @@ import java.io.IOException;
 
 public class Not_Quite_Lisp {
     
-    public static int getSantasDestination(String directions) {
+    public static int getSantasDestination(String directions) throws Exception {
         int floor = 0;
 
         for (char direction: directions.toCharArray()) {
             try {
-                floor += followDirection(direction);
-            } catch (IOException e) {
-                return 0; // TODO figure out how to test for thrown exceptions
+                floor = Math.addExact(floor, followDirection(direction));
+            } catch (Exception e) {
+                throw e;
             }
         }
 
@@ -25,19 +25,19 @@ public class Not_Quite_Lisp {
             case ')':
                 return -1;
             default:
-                throw new IOException("Invalid directions: contains character" + direction);
+                throw new IOException("Invalid directions: contains character " + direction);
         }
     }
 
-    public static int santaEntersBasementAt(String directions) {
+    public static int santaEntersBasementAt(String directions) throws Exception {
         int floor = 0;
         int instruction_count = 0;
 
         for (char direction: directions.toCharArray()) {
             try {
-                floor += followDirection(direction);
-            } catch (IOException e) {
-                return 0; // TODO figure out how to test for thrown exceptions
+                floor = Math.addExact(floor, followDirection(direction));
+            } catch (Exception e) {
+                throw e;
             }
 
             instruction_count++;
@@ -47,6 +47,6 @@ public class Not_Quite_Lisp {
             }
         }
 
-        return 0; // TODO replace with thrown Exception
+        throw new NeverEnteredBasementException();
     } 
 }
