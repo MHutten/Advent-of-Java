@@ -3,7 +3,6 @@ package test._2015.Day_3;
 import advent_of_code._2015.Day_3.Perfectly_Spherical_Houses_in_a_Vacuum;
 import advent_of_code.testing.asserts;
 import advent_of_code.testing.Test;
-import advent_of_code.testing.TestFailure;
 import advent_of_code.testing.TestSuite;
 
 public class Perfectly_Spherical_Houses_in_a_Vacuum_test extends TestSuite {

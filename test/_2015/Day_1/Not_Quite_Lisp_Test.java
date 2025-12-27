@@ -3,7 +3,6 @@ package test._2015.Day_1;
 import advent_of_code._2015.Day_1.Not_Quite_Lisp;
 import advent_of_code.testing.asserts;
 import advent_of_code.testing.Test;
-import advent_of_code.testing.TestFailure;
 import advent_of_code.testing.TestSuite;
 
 public class Not_Quite_Lisp_test extends TestSuite {
