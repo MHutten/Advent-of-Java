@@ -24,7 +24,7 @@ public class Probably_a_Fire_Hazard {
         String[] start = substrings[0].split(",");
         String[] end = substrings[2].split(",");
 
-        Operation output = new Operation(
+        return new Operation(
             operation,
             new int[]{
                 Integer.parseInt(start[0]),
@@ -35,8 +35,6 @@ public class Probably_a_Fire_Hazard {
                 Integer.parseInt(end[1])
             }
         );
-
-        return output;
 
     }
 

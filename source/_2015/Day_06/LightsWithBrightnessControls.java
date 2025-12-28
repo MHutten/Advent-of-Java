@@ -74,4 +74,12 @@ public class LightsWithBrightnessControls {
 
     }
 
+    public int get_light(int i, int j) {
+        return this.lights[i][j];
+    }
+
+    public void set_light(int i, int j, int value) {
+        this.lights[i][j] = value;
+    }
+
 }

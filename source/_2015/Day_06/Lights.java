@@ -74,4 +74,12 @@ public class Lights {
 
     }
 
+    public boolean get_light(int i, int j) {
+        return this.lights[i][j];
+    }
+
+    public void set_light(int i, int j, boolean value) {
+        this.lights[i][j] = value;
+    }
+
 }
