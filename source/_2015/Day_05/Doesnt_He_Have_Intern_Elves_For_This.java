@@ -1,4 +1,4 @@
-package advent_of_code._2015.Day_5;
+package advent_of_code._2015.Day_05;
 
 public class Doesnt_He_Have_Intern_Elves_For_This {
 

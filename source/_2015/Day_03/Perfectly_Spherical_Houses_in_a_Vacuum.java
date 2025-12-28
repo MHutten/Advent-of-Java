@@ -1,4 +1,4 @@
-package advent_of_code._2015.Day_3;
+package advent_of_code._2015.Day_03;
 
 import java.util.ArrayList;
 

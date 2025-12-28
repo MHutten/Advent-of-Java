@@ -1,6 +1,6 @@
-package test._2015.Day_2;
+package test._2015.Day_02;
 
-import advent_of_code._2015.Day_2.I_Was_Told_There_Would_Be_No_Math;
+import advent_of_code._2015.Day_02.I_Was_Told_There_Would_Be_No_Math;
 import advent_of_code.testing.asserts;
 import advent_of_code.testing.Test;
 import advent_of_code.testing.TestSuite;

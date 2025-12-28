@@ -1,4 +1,4 @@
-package advent_of_code._2015.Day_6;
+package advent_of_code._2015.Day_06;
 
 public class Operation {
 

@@ -1,4 +1,4 @@
-package advent_of_code._2015.Day_1;
+package advent_of_code._2015.Day_01;
 
 import advent_of_code.file;
 

@@ -1,4 +1,4 @@
-package advent_of_code._2015.Day_2;
+package advent_of_code._2015.Day_02;
 
 public class I_Was_Told_There_Would_Be_No_Math {
 
