@@ -57,6 +57,7 @@ public class Perfectly_Spherical_Houses_in_a_Vacuum {
         ArrayList<int[]> visited_houses = new ArrayList<int[]>();
         int[] santas_current_location = {0, 0};
         int[] robo_current_location = {0, 0};
+        visited_houses.add(santas_current_location.clone());
         boolean it_is_santas_turn = true;
 
         for (char instruction: instructions.toCharArray()) {

@@ -1,5 +1,6 @@
 package advent_of_code.testing;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
@@ -17,7 +18,11 @@ public class TestSuite {
                 try {
                     method.invoke(this);
                     System.out.println(method.getName() + ": PASS");
+                } catch (InvocationTargetException exception) {
+                    System.out.println(exception.getCause());
+                    System.out.println(method.getName() + ": FAIL");
                 } catch (Exception exception) {
+                    System.out.println(exception);
                     System.out.println(method.getName() + ": FAIL");
                 }
             }
