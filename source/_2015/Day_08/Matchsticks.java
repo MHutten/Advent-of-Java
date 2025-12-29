@@ -20,7 +20,7 @@ public class Matchsticks {
             } else if (string.charAt(index + 1) == 'x' && is_hexadecimal_digit(string.charAt(index + 2)) && is_hexadecimal_digit(string.charAt(index + 3))) {
                 index += 4;
             } else {
-                throw new Exception("Unexpected nech characters '" + string.charAt(index + 1) + "', '" + string.charAt(index + 2) + "', and '" + string.charAt(index + 3) + "' in string \"" + string + "\"");
+                throw new Exception("Unexpected next characters '" + string.charAt(index + 1) + "', '" + string.charAt(index + 2) + "', and '" + string.charAt(index + 3) + "' in string \"" + string + "\"");
             }
 
             length++;

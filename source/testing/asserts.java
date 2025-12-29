@@ -26,4 +26,12 @@ public class asserts {
 
     }
 
+    public static void assert_equal(String first, String second) {
+
+        if (!first.equals(second)) {
+            throw new TestFailure(first + " != " + second);
+        }
+
+    }
+
 }
