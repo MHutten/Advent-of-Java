@@ -5,7 +5,6 @@ public class Doesnt_He_Have_Intern_Elves_For_This {
     private static boolean is_vowel(char character) {
 
         String vowels = "aeiou";
-        int index = 0;
 
         for (char vowel: vowels.toCharArray()) {
 
@@ -22,7 +21,6 @@ public class Doesnt_He_Have_Intern_Elves_For_This {
     private static boolean is_naughty_substring(String string) {
 
         String[] naughty_substrings = {"ab", "cd", "pq", "xy"};
-        int index = 0;
 
         for (String naughty_substring: naughty_substrings) {
 
