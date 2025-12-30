@@ -6,7 +6,6 @@ public class Elves_Look_Elves_Say {
 
     public static String look_and_say(String string) throws Exception {
 
-        int length = 1;
         String output = "";
         int string_index = 0;
 
